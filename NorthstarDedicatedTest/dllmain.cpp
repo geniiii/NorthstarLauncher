@@ -82,7 +82,6 @@ void InitialiseNorthstar()
     // dedi patches
     {
         AddDllLoadCallback("engine.dll", InitialiseDedicated);
-        AddDllLoadCallback("launcher.dll", InitialiseDedicatedOrigin);
         AddDllLoadCallback("server.dll", InitialiseDedicatedServerGameDLL);
         AddDllLoadCallback("materialsystem_dx11.dll", InitialiseDedicatedMaterialSystem);
         // this fucking sucks, but seemingly we somehow load after rtech_game???? unsure how, but because of this we have to apply patches here, not on rtech_game load
